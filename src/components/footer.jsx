@@ -19,7 +19,7 @@ function Footer() {
           </h3>
                 </div><br></br>
 
-        Copyright,2023 Sinazo Sihentshe. All right received.
+        . Footoer.
     </footer>
  
   );

@@ -1,0 +1,141 @@
+#home-container {
+    color:black;
+     padding-top: 30px; 
+    font-size: x-large;
+    margin-top: 60px;
+    display: flex;
+    
+    
+}
+
+#wave {
+    -webkit-animation-duration: 3.1s;
+    animation-duration: 2.1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: wave-animation;
+    animation-name: wave-animation;
+    display: inline-block;
+    -webkit-transform-origin: 70% 70%;
+    transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#home-subtitle {
+    white-space: nowrap;
+    overflow: hidden;
+    padding-top: 12px;
+    border-right: 4px solid #fff;
+    animation: cursor 1s step-start infinite,
+        text 4s steps(12) alternate infinite;
+}
+
+@keyframes cursor {
+
+    0%,
+    100% {
+        border-color: #fff;
+    }
+}
+
+@keyframes text {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 18.5ch;
+    }
+}
+
+
+
+#home-content {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+#home-btns {
+ display: flex;
+
+}
+#home-btn {
+   background-color: rgb(4, 85, 4);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 1rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 12px;
+}
+
+#home-btn:hover {
+    background-color: #131414;
+  }
+
+@media (max-width: 768px) {
+    #home {
+        font-size: large;
+        padding-top: 20px;
+    }
+
+    #home-content {
+        padding: 20px;
+    }
+
+  
+}
+.custom-button {
+    background-color:  rgb(4, 85, 4);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+  }
+  
+  .custom-button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .custom-button:hover {
+    background-color:  rgb(4, 85, 4);
+  }
+  
+  /* For the .btn class */
+  .btn {
+    background-color: rgb(4, 85, 4);
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #131414;
+    color:#fff
+  }

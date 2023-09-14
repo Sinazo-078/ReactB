@@ -1,0 +1,143 @@
+/* Logo Styles */
+.logo {
+  object-fit: cover;
+  height: 4rem; /* Adjust the logo height */
+  width: auto; /* Let the width adjust proportionally */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(52, 110, 52);
+  padding: 10px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  color: #fff;
+  
+  
+}
+
+
+nav .title {
+  color: #fff;
+  text-decoration: none;
+ 
+ 
+}
+
+nav ul {
+  display: flex;
+
+}
+
+nav ul li {
+  list-style: none;
+  text-decoration: none;
+ 
+
+}
+
+/*nav :hover {
+  color:yellow;
+
+}*/
+
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+  margin: 1rem;
+}
+
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+ 
+  height: 2px;
+
+}
+
+nav.stroke ul li a:hover:after {
+  width: 50%;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.21rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  
+
+}
+
+nav ul.open {
+  display: flex;
+}
+
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+
+}
+
+nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  border-radius: 0.2rem;
+  background-color:black;
+}
+
+
+@media (max-width:480px) {
+  nav .menu {
+      display: flex;
+
+  }
+
+  nav {
+      flex-direction: column;
+      align-items: start;
+  }
+
+  nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 0.25rem;
+  }
+
+  nav ul li {
+      width: 100%;
+      text-align: center;
+  }
+
+  nav ul li a {
+      margin: 0.2rem 0.5rem;
+  }
+
+  nav.stroke ul li a:hover:after {
+      width: 20%;
+  }
+
+}
+
+.desktopMenuListItem:hover {
+  color: yellow;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellow;
+}

@@ -44,6 +44,7 @@ function about() {
 
             </Col>
           </Row>
+          
           <Row><h1 id="title">Skills</h1>
             <Col>
 

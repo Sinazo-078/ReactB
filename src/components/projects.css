@@ -143,3 +143,12 @@
 .btn:hover {
   background-color: #131414;
 }
+
+ 
+@media screen and (max-width: 740px) {
+  .project-content{
+    display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+  }
+}

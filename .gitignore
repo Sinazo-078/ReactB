@@ -1,2 +1,8 @@
+## node.js
 /node_modules
-/public
+lib-cov
+public
+
+Desktop.ini
+$RECYCLE.BIN/
+Thumbs.db 

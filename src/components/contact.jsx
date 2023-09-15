@@ -24,8 +24,6 @@ function Contact() {
     emailjs.sendForm('service_kjioybs', 'template_gj3p81i', e.target, 'hPuv9fH3TuF7kOgoU')
       .then((result) => {
         console.log(result.text);
-        e.target.reset();
-        alert('Email Sent !');
       }, (error) => {
         console.log(error.text);
       });
@@ -71,7 +69,7 @@ function Contact() {
                   <textarea rows="6" placeholder="Enter message..." name="message" required></textarea>
 
 
-                  <button type="submit" >masage Message</button>
+                  <button type="submit" onClick={() => alert('sussesfully send')}>Send Message</button>
                 </form><br></br>
               </div>
 
